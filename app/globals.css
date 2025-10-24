@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Temp";
+    src: url("/fonts/DuplicateSans.woff") format("woff");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Temp", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.ds {
+    font-family: "Temp", serif;
+    font-style: normal;
+}
+.temp {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    /*font-style: italic;*/
+}
+
+.sub {
+    font-family: "Mona Sans", sans-serif;
+}
+
+:root {
+    --primary-color: #0457f3;
+    --black-color: #2d2c2c;
+}
