@@ -1,7 +1,7 @@
 import { Variants } from "framer-motion";
 
 export const headingVariants = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: () => ({ opacity: 0, y: 20 }),
   visible: (delay = 0) => ({
     opacity: 1,
     y: 0,
@@ -12,7 +12,7 @@ export const headingVariants = {
   (delay?: number) => Variants[keyof Variants]
 >;
 export const subtextVariants = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: () => ({ opacity: 0, y: 20 }),
   visible: (delay = 0) => ({
     opacity: 1,
     y: 0,
@@ -23,7 +23,7 @@ export const subtextVariants = {
   (delay?: number) => Variants[keyof Variants]
 >;
 export const buttonVariants = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: () => ({ opacity: 0, y: 20 }),
   visible: (delay = 0) => ({
     opacity: 1,
     y: 0,
