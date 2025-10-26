@@ -9,7 +9,7 @@ import { menu } from "framer-motion/m";
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   return (
-    <nav className=" mt-10 md:mt-14">
+    <nav className=" mt-14 md:mt-14">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <motion.div
           variants={listVariants}
