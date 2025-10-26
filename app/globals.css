@@ -40,3 +40,11 @@ h6 {
     --primary-color: #0457f3;
     --black-color: #2d2c2c;
 }
+/* globals.css */
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

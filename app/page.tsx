@@ -11,8 +11,8 @@ import {
 
 export default function Home() {
   return (
-    <main className="w-full py-10 md:p-0">
-      <section className="min-h-screen flex flex-col justify-center items-center w-full md:mt-24 pb-14 md:pb-36 gap-3 px-5 md:px-10">
+    <main className="w-full pt-10  md:p-0">
+      <section className=" h-[80vh]md:min-h-screen flex flex-col justify-center items-center w-full md:mt-24 pb-10 md:pb-36 gap-3 px-5 md:px-10">
         <div className="md:text-center w-full md:max-w-5xl flex flex-col gap-2 justify-center items-start md:items-center">
           <motion.h1
             variants={headingVariants}
@@ -69,49 +69,27 @@ export default function Home() {
             </Link>
           </motion.button>
         </div>
-        <div className="flex justify-center items-center gap-4 mt-20 overflow-x-auto md:overflow-x-visible scrollbar-hidden px-4">
-          <Image
-            src="/hero-image.jpg"
-            alt="Hero Image"
-            width={200}
-            height={300}
-            className="rounded-lg grayscale-100 hover:grayscale-0 shrink-0"
-          />
-          <Image
-            src="/hero-image-3.jpg"
-            alt="Hero Image"
-            width={200}
-            height={300}
-            className="rounded-lg grayscale-100 hover:grayscale-0 shrink-0"
-          />
-          <Image
-            src="/hero-image-2.jpg"
-            alt="Hero Image"
-            width={200}
-            height={300}
-            className="rounded-lg grayscale-100 hover:grayscale-0 shrink-0"
-          />
-          <Image
-            src="/tn.jpg"
-            alt="Hero Image"
-            width={200}
-            height={300}
-            className="rounded-lg grayscale-100 hover:grayscale-0 shrink-0"
-          />
-          <Image
-            src="/tt.jpg"
-            alt="Hero Image"
-            width={200}
-            height={300}
-            className="rounded-lg grayscale-100 hover:grayscale-0 shrink-0"
-          />
-          <Image
-            src="/ty.jpg"
-            alt="Hero Image"
-            width={200}
-            height={300}
-            className="rounded-lg grayscale-100 hover:grayscale-0 shrink-0"
-          />
+        <div className="w-full mt-16 px-4">
+          <div className="flex justify-start md:justify-center items-center gap-4 overflow-x-auto md:overflow-visible scrollbar-hidden scroll-smooth snap-x snap-mandatory">
+            {[
+              "/hero-image.jpg",
+              "/hero-image-3.jpg",
+              "/hero-image-2.jpg",
+              "/tn.jpg",
+              "/tt.jpg",
+              "/ty.jpg",
+            ].map((src, i) => (
+              <div key={i} className="shrink-0 snap-center">
+                <Image
+                  src={src}
+                  alt={`Hero ${i + 1}`}
+                  width={200}
+                  height={300}
+                  className="rounded-lg grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+            ))}
+          </div>
         </div>
 
         {/*<div className="flex flex-col justify-center items-center mt-10 px-4 py-3 rounded-sm   border border-(--primary-color) shadow-[2px_2px_0px_0px] shadow-[#0457f3] hover:shadow-none transition-shadow duration-300">
@@ -343,7 +321,7 @@ export default function Home() {
       </section>
 
       <section
-        className="flex flex-col justify-center items-center w-full mt-36 py-24 bg-(--primary-color) md:px-10  gap-16"
+        className="flex flex-col justify-center items-center w-full mt-36 bg-(--primary-color) md:px-10  gap-16"
         id="why-choose-us"
       >
         <div className="relative flex flex-col justify-center items-center gap-20 border border-white/20 rounded-sm px-4 md:px-12 py-20 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-size-[20px_20px] ">
