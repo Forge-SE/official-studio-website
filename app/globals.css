@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 @import "tailwindcss";
 
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: "Temp";
     src: url("/fonts/DuplicateSans.woff") format("woff");

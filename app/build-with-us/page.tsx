@@ -58,18 +58,24 @@ const BuildWithUs = () => {
   const timelines = ["ASAP", "1–3 months", "3–6 months", "Flexible"];
 
   return (
-    <section className="flex justify-center items-start px-10 pt-24 pb-36 w-full">
+    <section className="flex flex-col md:flex-row  justify-center items-start px-5 md:px-10 mt-1 md:pt-24 pb-36 w-full md:gap-0 gap-16  ">
       {/* LEFT SIDE */}
-      <div className="flex flex-col justify-center items-start w-1/2 gap-5">
-        <h1 className="text-5xl ds font-semibold text-black">
-          Let&apos;s create something remarkable
-        </h1>
-        <p className="sub text-base max-w-xl">
-          We collaborate with ambitious teams to design, engineer, and launch
-          products that scale. Share a few details about your project — we’ll
-          review it and get in touch to explore how we can make it happen
-          together.
-        </p>
+      <div className="flex flex-col-reverse md:flex-col justify-center items-start w-full md:w-1/2 gap-5">
+        <div className="w-full space-y-4">
+          <h1 className=" hidden md:flex text-4xl md:text-5xl ds font-semibold text-black">
+            Let&apos;s create something remarkable
+          </h1>
+          <h1 className=" md:hidden flex text-4xl md:text-5xl ds font-semibold text-black">
+            Build with us
+          </h1>
+          <p className="sub text-sm w-full md:text-base md:max-w-xl">
+            We collaborate with ambitious teams to design, engineer, and launch
+            products that scale. Share a few details about your project — we’ll
+            review it and get in touch to explore how we can make it happen
+            together.
+          </p>
+        </div>
+
         <Image
           src="/tv.jpg"
           alt="Build with us"
@@ -80,7 +86,7 @@ const BuildWithUs = () => {
       </div>
 
       {/* RIGHT SIDE - FORM */}
-      <div className="w-1/2 flex justify-center items-center">
+      <div className=" w-full md:w-1/2 flex justify-center items-center">
         {submitted ? (
           <div className="h-[60vh] flex flex-col justify-center items-center">
             <Image src="/near-me.svg" alt="" width={80} height={80} />
@@ -270,7 +276,7 @@ const BuildWithUs = () => {
             {/* SUBMIT */}
             <button
               type="submit"
-              className="w-full sub bg-(--primary-color) text-white text-sm px-4 py-3 rounded-sm  shadow-[2px_2px_0px_0px] shadow-blue-800 hover:shadow-none transition-shadow duration-300"
+              className="cursor-pointer w-full sub bg-(--primary-color) text-white text-sm px-4 py-3 rounded-sm  shadow-[2px_2px_0px_0px] shadow-blue-800 hover:shadow-none transition-shadow duration-300"
             >
               {loading ? (
                 <span className="animate-spin inline-block w-4 h-4 border-2 border-white border-t-transparent rounded-full"></span>
