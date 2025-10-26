@@ -41,7 +41,7 @@ export const Footer = () => {
             whileInView="visible"
             custom={0}
             viewport={{ once: true }}
-            className="sub bg-(--primary-color) text-white w-full text-sm p-4 rounded-sm shadow-[2px_2px_0px_0px] shadow-blue-800 hover:shadow-none transition-shadow duration-300"
+            className="sub bg-(--primary-color) text-white w-full md:w-auto text-sm p-4 rounded-sm shadow-[2px_2px_0px_0px] shadow-blue-800 hover:shadow-none transition-shadow duration-300"
           >
             <Link href="https://calendly.com/engineering-forgestudios/30min">
               Meet an engineer ↗
@@ -53,7 +53,7 @@ export const Footer = () => {
             whileInView="visible"
             custom={0}
             viewport={{ once: true }}
-            className="sub border border-white bg-white w-full text-black text-sm p-4 rounded-sm shadow-[2px_2px_0px_0px] shadow-white/50 hover:shadow-none transition-shadow duration-300"
+            className="sub border border-white bg-white w-full md:w-auto text-black text-sm p-4 rounded-sm shadow-[2px_2px_0px_0px] shadow-white/50 hover:shadow-none transition-shadow duration-300"
           >
             <Link href="https://calendly.com/forgestudios-sales/30min">
               Talk to sales ↗
