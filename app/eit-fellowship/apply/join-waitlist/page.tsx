@@ -94,7 +94,7 @@ const WaitlistForm = () => {
       <div className="w-full md:w-1/2 flex justify-center items-center">
         {submitted ? (
           <div className="h-[60vh] flex flex-col justify-center items-center text-center">
-            <Image src="/success.svg" alt="" width={80} height={80} />
+            <Image src="/near-me.svg" alt="" width={80} height={80} />
             <h2 className="text-2xl font-semibold text-black mt-3">
               You’re on the waitlist!
             </h2>
