@@ -70,7 +70,7 @@ export const Navbar = () => {
             </motion.span>
           </Link>
           <Link
-            href="/contact"
+            href="/careers"
             className="hover:text-(--black-color) transition"
           >
             <motion.span
@@ -157,7 +157,7 @@ export const Navbar = () => {
             </motion.span>
           </Link>
           <Link
-            href="/contact"
+            href="/careers"
             className="hover:text-(--black-color) transition"
             onClick={() => setMenuOpen(false)}
           >

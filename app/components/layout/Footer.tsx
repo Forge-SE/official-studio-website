@@ -139,7 +139,7 @@ export const Footer = () => {
               Why Choose Us ↗
             </motion.span>{" "}
           </Link>
-          <Link href="" className="text-white">
+          <Link href="/careers" className="text-white">
             <motion.span
               variants={listVariants}
               initial="hidden"
@@ -178,7 +178,10 @@ export const Footer = () => {
           >
             Get in touch with us
           </motion.span>
-          <Link href="" className="text-white">
+          <Link
+            href="mailto:sales@forgestudios.tech&subject=Sales Inquiry"
+            className="text-white"
+          >
             <motion.span
               variants={listVariants}
               initial="hidden"
@@ -190,7 +193,7 @@ export const Footer = () => {
               sales@forgestudios.tech
             </motion.span>{" "}
           </Link>
-          <Link href="" className="text-white">
+          <Link href="tel:+233509081558" className="text-white">
             <motion.span
               variants={listVariants}
               initial="hidden"
