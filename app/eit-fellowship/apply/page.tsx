@@ -16,10 +16,12 @@ const ApplicationStatus = () => {
       </p>
       <div className="flex flex-col md:flex-row justify-center items-center gap-5 md:gap-10 w-full">
         <button className=" md:w-auto w-full sub bg-(--primary-color) text-white text-sm px-4 py-3 rounded-sm  shadow-[2px_2px_0px_0px] shadow-blue-800 hover:shadow-none transition-shadow duration-300">
-          <span>Join The Waitlist</span>{" "}
-          <kbd className="h-4 border border-white/40 bg-white/15  px-1 text-sm rounded-xs ml-1">
-            <span className="text-xs">↪</span>
-          </kbd>
+          <Link href="/eit-fellowship/apply/join-waitlist">
+            <span>Join The Waitlist</span>{" "}
+            <kbd className="h-4 border border-white/40 bg-white/15  px-1 text-sm rounded-xs ml-1">
+              <span className="text-xs">↪</span>
+            </kbd>
+          </Link>
         </button>
         <button className=" md:w-auto w-full sub border  text-black text-sm px-4 py-3 rounded-sm  shadow-[2px_2px_0px_0px] shadow-black hover:shadow-none transition-shadow duration-300">
           <Link href="/">

@@ -11,8 +11,8 @@ import {
 
 export default function Home() {
   return (
-    <main className="w-full pt-10  md:p-0">
-      <section className=" h-[80vh]md:min-h-screen flex flex-col justify-center items-center w-full md:mt-24 pb-10 md:pb-36 gap-3 px-5 md:px-10">
+    <main className="w-full pt-10  md:p-0 ">
+      <section className=" h-[80vh] md:min-h-screen flex flex-col justify-center items-center w-full max-w-7xl mx-auto md:mt-24 pb-10 md:pb-36 gap-3 px-5 md:px-10">
         <div className="md:text-center w-full md:max-w-5xl flex flex-col gap-2 justify-center items-start md:items-center">
           <motion.h1
             variants={headingVariants}
@@ -100,7 +100,7 @@ export default function Home() {
         </div>*/}
       </section>
       <section
-        className="flex flex-col justify-center items-start w-full gap-10 py-36 px-4 md:px-10 "
+        className="flex flex-col justify-center items-start w-full gap-10 py-36 px-4 md:px-10 max-w-7xl mx-auto "
         id="our-services"
       >
         <div className="flex flex-col justify-center items-start gap-4  w-full md:max-w-xl">
