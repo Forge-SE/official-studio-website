@@ -5,7 +5,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useState } from "react";
 
-const WaitlistForm = () => {
+export default function WaitlistPage() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -294,6 +294,4 @@ const WaitlistForm = () => {
       </div>
     </section>
   );
-};
-
-export default WaitlistForm;
+}
