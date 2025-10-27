@@ -239,7 +239,10 @@ export const Footer = () => {
               Linkedin ↗
             </motion.span>{" "}
           </Link>
-          <Link href="" className="text-gray-300">
+          <Link
+            href="https://www.instagram.com/_forge.studios"
+            className="text-gray-300"
+          >
             <motion.span
               variants={listVariants}
               initial="hidden"
@@ -251,7 +254,7 @@ export const Footer = () => {
               Instagram ↗
             </motion.span>{" "}
           </Link>
-          <Link href="" className="text-gray-300">
+          <Link href="https://x.com/_forgestudios" className="text-gray-300">
             <motion.span
               variants={listVariants}
               initial="hidden"
@@ -263,7 +266,10 @@ export const Footer = () => {
               Twitter ↗
             </motion.span>{" "}
           </Link>
-          <Link href="" className="text-gray-300">
+          <Link
+            href="https://www.facebook.com/share/17KoYNBcrM/?mibextid=wwXIfr"
+            className="text-gray-300"
+          >
             <motion.span
               variants={listVariants}
               initial="hidden"
@@ -273,6 +279,21 @@ export const Footer = () => {
               className="text-[15px] ds font-medium hover:text-gray-200"
             >
               Facebook ↗
+            </motion.span>{" "}
+          </Link>
+          <Link
+            href="https://www.tiktok.com/@_forge.studios"
+            className="text-gray-300"
+          >
+            <motion.span
+              variants={listVariants}
+              initial="hidden"
+              whileInView="visible"
+              custom={5}
+              viewport={{ once: true }}
+              className="text-[15px] ds font-medium hover:text-gray-200"
+            >
+              TikTok ↗
             </motion.span>{" "}
           </Link>
         </div>
