@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const ApplicationStatus = () => {
   return (
-    <div className="flex flex-col  items-center md:h-screen justify-center mt-16  pb-36 md:pb-36   gap-4 px-5  md:px-10 w-full">
+    <div className="flex flex-col  items-center md:h-[80vh] justify-center mt-16  pb-36 md:pb-36   gap-4 px-5  md:px-10 w-full">
       <span className=" text-xs md:text-sm bg-(--primary-color) p-2 text-white ds tracking-wider rounded-sm">
         Applications Closed
       </span>
