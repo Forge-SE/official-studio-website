@@ -245,6 +245,15 @@ export const teamGroups: TeamGroup[] = [
           className: "object-[center_18%]",
         },
       },
+      {
+        name: "Frderick Noble",
+        role: "Graphic Designer",
+        image: {
+          src: "/noble.png",
+          alt: "Portrait of Frderick Noble.",
+          className: "object-center",
+        },
+      },
     ],
   },
 ];
