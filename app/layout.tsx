@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   title: "Forge Studios | Building world-class digital products",
   description:
     "We are a team of passionate engineers and desginers who are dedicated to creating innovative and user-centric digital products that solve real-world problems.",
+  icons: {
+    icon: "/Logo-Blue.svg",
+    shortcut: "/Logo-Blue.svg",
+    apple: "/Logo-Blue.svg",
+  },
 };
 
 export default function RootLayout({
