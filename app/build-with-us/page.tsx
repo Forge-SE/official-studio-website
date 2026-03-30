@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useState } from "react";
-import Link from "next/link";
 
 const BuildWithUs = () => {
   const [submitted, setSubmitted] = useState(false);

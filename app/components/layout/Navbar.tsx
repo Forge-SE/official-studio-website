@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { listVariants } from "./Animations";
-import { menu } from "framer-motion/m";
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   return (

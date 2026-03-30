@@ -65,7 +65,7 @@ export const Footer = () => {
         <hr className="h-0.5 w-full bg-white/10  flex items-center justify-center" />
       </div>
 
-      <section className="grid grid-cols-1 md:grid-cols-3 place-items-start md:place-items-center items-start gap-10 md:gap-0 mt-24 px-6 md:px-0">
+      <section className="grid grid-cols-1 md:grid-cols-4 place-items-start md:place-items-center items-start gap-10 md:gap-0 mt-24 px-6 md:px-0">
         <div className="flex flex-col justify-center items-start gap-2">
           <motion.div
             variants={headingVariants}
@@ -205,6 +205,48 @@ export const Footer = () => {
               (+233) 50 908 1558
             </motion.span>{" "}
           </Link>
+        </div>
+        <div className="flex flex-col justify-center items-start gap-4">
+          <motion.span
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+            custom={0}
+            viewport={{ once: true }}
+            className="text-gray-400 text-sm md:text-base sub font-light"
+          >
+            Locations
+          </motion.span>
+          <motion.span
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+            custom={1}
+            viewport={{ once: true }}
+            className="text-base md:text-[15px] ds font-medium text-white"
+          >
+            Delaware, USA
+          </motion.span>
+          <motion.span
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+            custom={3}
+            viewport={{ once: true }}
+            className="text-base md:text-[15px] ds font-medium text-white"
+          >
+            Accra, Ghana
+          </motion.span>
+          <motion.span
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+            custom={5}
+            viewport={{ once: true }}
+            className="text-base md:text-[15px] ds font-medium text-white"
+          >
+            Nigeria
+          </motion.span>
         </div>
       </section>
       <div className="w-full flex items-center justify-center pb-12 pt-24">
