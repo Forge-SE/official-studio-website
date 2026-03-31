@@ -4,6 +4,7 @@ import "./globals.css";
 import { Cohort2Banner } from "./components/Cohort2-Banner";
 import { Navbar } from "./components/layout/Navbar";
 import { Footer } from "./components/layout/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Mona_Sans({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
